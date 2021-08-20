@@ -9,6 +9,10 @@ Assuming current directory contains the source code to analyze, simply run the f
 ```Dockerfile
 docker run --rm -v ${PWD}:/src facthunder/frama-c:latest -rte -eva *.c **/*.c > report.txt
 ```
+For windows docker
+```
+docker run --rm -v %cd%:/src facthunder/frama-c:latest -rte -eva test.c > report.txt
+```
 
 ### Versions matrix
 Here is the versions matrix of the image:
